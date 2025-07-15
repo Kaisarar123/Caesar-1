@@ -1,22 +1,6 @@
 import streamlit as st
 import random
 
-def login():
-    st.title("🔐 Кіру (Login)")
-    username = st.text_input("Пайдаланушы аты (Username)")
-    password = st.text_input("Құпиясөз (Password)", type="password")
-    if st.button("Кіру"):
-        if username == "Caesar" and password == "136000":
-            st.session_state.logged_in = True
-        else:
-            st.error("❌ Қате логин немесе құпиясөз")
-
-if "logged_in" not in st.session_state:
-    st.session_state.logged_in = False
-
-if not st.session_state.logged_in:
-    login()
-    st.stop()
 
 questions = [
     {
