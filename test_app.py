@@ -445,7 +445,8 @@ questions = [
 # ---------------------------
 # Streamlit Web App
 # ---------------------------
-st.title("30.07 - уже тапсырамыз так что оқы оқы және оқы.")
+st.title(" JK-12.07
+30.07 - уже тапсырамыз так что оқы оқы және оқы.")
 
 if "selected" not in st.session_state:
     st.session_state.selected = random.sample(questions, 10)
