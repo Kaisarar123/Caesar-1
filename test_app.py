@@ -508,10 +508,10 @@ if submitted:
         user_set = set(user_answers[i])
 
         if user_set == correct_set:
-            st.success(f"{i}. ✅ Ахххх ты черт ты прав ")
+            st.success(f"{i}. ✅ Хорош ")
             score += 1
         else:
-            st.error(f"{i}. ❌ Черт,ты теперь и  лох")
+            st.error(f"{i}. ❌ Запомни это бл# ")
             st.markdown(f"Правильный ответ: **{', '.join(correct_set)}**")
 
     st.markdown(f"### ✅ Итог: {score} из {len(st.session_state.selected)}")
