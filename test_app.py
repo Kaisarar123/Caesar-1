@@ -530,7 +530,7 @@ questions = [
 st.title("JK-12.07_30.07 - уже тапсырамыз так что оқы оқы және оқы.")
 
 if "selected" not in st.session_state:
-    st.session_state.selected = random.sample(questions, 10)
+    st.session_state.selected = random.sample(questions, 5)
 
 user_answers = {}
 
