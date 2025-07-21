@@ -550,7 +550,13 @@ if submitted:
     st.subheader("📊 Результаты:")
 
     for i, q in enumerate(st.session_state.selected, 1):
-        correct_set = set(q["correct"])
+        correct = q.get("correct")
+        if not correct:
+          
+            answer = q.get("answer")
+            correct = [answer] if answer else []
+
+        correct_set = set(correct)
         user_set = set(user_answers[i])
 
         if user_set == correct_set:
